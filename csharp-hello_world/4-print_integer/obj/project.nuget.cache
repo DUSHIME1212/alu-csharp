@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "qNyQpIa9jZoJwv3rAf3dITd977bXlfCFwNGrHfiZ4E0SCkjNOuRqYKP0XdT3aBuuapiJ1C9347cHSszXP32kDA==",
+  "dgSpecHash": "2vdwXGwLAzs=",
   "success": true,
   "projectFilePath": "/home/matt/Documents/learnc#/alu-csharp/csharp-hello_world/4-print_integer/4-print_integer.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/home/matt/.nuget/packages/microsoft.netcore.app.ref/7.0.20/microsoft.netcore.app.ref.7.0.20.nupkg.sha512",
+    "/home/matt/.nuget/packages/microsoft.aspnetcore.app.ref/7.0.20/microsoft.aspnetcore.app.ref.7.0.20.nupkg.sha512",
+    "/home/matt/.nuget/packages/microsoft.netcore.app.host.linux-x64/7.0.20/microsoft.netcore.app.host.linux-x64.7.0.20.nupkg.sha512"
+  ],
   "logs": []
 }
