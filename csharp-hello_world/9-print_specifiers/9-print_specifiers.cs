@@ -6,7 +6,7 @@ class Program
         double percent = .7553;
         double currency = 98765.4321;
 
-        Console.WriteLine("Percent: {0:p2}", percent);  // Displays the percentage with 2 decimal places
-        Console.WriteLine("Currency: {0:C2}", currency);    // Displays the currency in the correct format
+        Console.WriteLine("Percent: {0:p2}", percent);  
+        Console.WriteLine("Currency: {0:C2}", currency);    
     }
 }
