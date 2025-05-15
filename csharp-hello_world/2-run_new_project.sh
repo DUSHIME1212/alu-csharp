@@ -1,10 +1,7 @@
 #!/usr/bin/env bash
 
-# Create and initialize a new C# console project in 2-new_project
 dotnet new console -o 2-new_project --force
 
-# Build the project
-dotnet build 2-new_project
+dotnet build 2-new_project/2-new_project.csproj
 
-# Run the project
-dotnet run --project 2-new_project --force
+dotnet run --project 2-new_project/2-new_project.csproj
