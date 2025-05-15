@@ -4,7 +4,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        for (char letter = 'A'; letter <= 'Z'; letter++)
+        for (char letter = 'a'; letter <= 'z'; letter++)
         {
             Console.Write(letter);
         }
