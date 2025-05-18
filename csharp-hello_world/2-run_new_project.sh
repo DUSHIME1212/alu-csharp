@@ -1,7 +1,16 @@
 #!/usr/bin/env bash
 
-dotnet new console -o 2-new_project --force
+# Create a new C# console application project in the 2-new_project folder
+dotnet new console -n 2-new_project
 
-dotnet build 2-new_project/2-new_project.csproj
+# Navigate into the project folder
+cd 2-new_project
 
-dotnet run --project 2-new_project/2-new_project.csproj
+# Restore project dependencies
+dotnet restore
+
+# Build the project
+dotnet build
+
+# Run the project
+dotnet run
