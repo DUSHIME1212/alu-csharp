@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/matt/Documents/learnc#/alu-csharp/csharp-arrays_lists_dictionaries/13-best_score/13-best_score.csproj",
-      "projectName": "13-best_score",
-      "projectPath": "/home/matt/Documents/learnc#/alu-csharp/csharp-arrays_lists_dictionaries/13-best_score/13-best_score.csproj",
+      "projectUniqueName": "/home/matt/Documents/learnc#/alu-csharp/csharp-hashset_stack_queue_linkedlist/0-unique_add/0-unique_add.csproj",
+      "projectName": "0-unique_add",
+      "projectPath": "/home/matt/Documents/learnc#/alu-csharp/csharp-hashset_stack_queue_linkedlist/0-unique_add/0-unique_add.csproj",
       "packagesPath": "/home/matt/.nuget/packages/",
-      "outputPath": "/home/matt/Documents/learnc#/alu-csharp/csharp-arrays_lists_dictionaries/13-best_score/obj/",
+      "outputPath": "/home/matt/Documents/learnc#/alu-csharp/csharp-hashset_stack_queue_linkedlist/0-unique_add/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/matt/.nuget/NuGet/NuGet.Config"
