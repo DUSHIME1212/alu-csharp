@@ -26,21 +26,27 @@ public static class MyStack
         if (containsSearch)
         {
             
-            Stack<string> tempStack = new Stack<string>();
+            List<string> stackItems = new List<string>(aStack);
+            int searchIndex = stackItems.IndexOf(search);
 
             
-            while (aStack.Peek() != search)
+            aStack.Clear();
+
+            
+            for (int i = stackItems.Count - 1; i >= 0; i--)
             {
-                tempStack.Push(aStack.Pop());
-            }
-
-            
-            aStack.Pop();
-
-            
-            while (tempStack.Count > 0)
-            {
-                aStack.Push(tempStack.Pop());
+                if (i > searchIndex)
+                {
+                    continue; 
+                }
+                else if (i == searchIndex)
+                {
+                    continue; 
+                }
+                else
+                {
+                    aStack.Push(stackItems[i]);
+                }
             }
         }
 
