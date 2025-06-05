@@ -16,29 +16,22 @@ public class MyQueue
             Console.WriteLine("First item: " + aQueue.Peek());
         }
 
+        aQueue.Enqueue(newItem);
+
         bool containsSearch = aQueue.Contains(search);
         Console.WriteLine($"Queue contains \"{search}\": {containsSearch}");
 
-        
-        string firstItem = null;
-        if (aQueue.Count > 0)
-            firstItem = aQueue.Dequeue();
-
-        Queue<string> tempQueue = new Queue<string>();
-
-        if (firstItem != null)
-            tempQueue.Enqueue(firstItem);
-
-        
-        foreach (var item in aQueue)
+         if (containsSearch)
         {
-            tempQueue.Enqueue(item);
+            Queue<string> tempQueue = new Queue<string>();
+
+            string current;
+            do
+            {
+                current = aQueue.Dequeue();
+            } while (current != search);
+
         }
-
-        
-        aQueue = tempQueue;
-
-        aQueue.Enqueue(newItem);
 
         return aQueue;
     }
