@@ -1,73 +1,36 @@
-﻿﻿using System;
+﻿using Xunit;
+using MyMath;
 
 namespace MyMath.Tests
 {
-    public class OperationsTests
+    public class MatrixTests
     {
-        public static void Main(string[] args)
+        [Fact]
+        public void Divide_ValidMatrixAndNonZeroNum_ReturnsDividedMatrix()
         {
-            TestPositiveIntegers();
-            TestNegativeIntegers();
-            TestPositiveAndNegative();
-            TestAddZero();
-            TestZeroPlusZero();
-            TestRegularAddition();
-            
-            Console.WriteLine("All unit tests pass");
+            int[,] matrix = { { 2, 4 }, { 6, 8 } };
+            int[,] expected = { { 1, 2 }, { 3, 4 } };
+
+            int[,] result = Matrix.Divide(matrix, 2);
+
+            Assert.Equal(expected, result);
         }
 
-        public static void TestPositiveIntegers()
+        [Fact]
+        public void Divide_ByZero_PrintsMessageAndReturnsNull()
         {
-            int result = Operations.Add(5, 3);
-            if (result == 8)
-                Console.WriteLine("Correct output: positive integers");
-            else
-                throw new Exception($"Test failed: expected 8, got {result}");
+            int[,] matrix = { { 1, 2 } };
+            int[,] result = Matrix.Divide(matrix, 0);
+
+            Assert.Null(result);
         }
 
-        public static void TestNegativeIntegers()
+        [Fact]
+        public void Divide_NullMatrix_ReturnsNull()
         {
-            int result = Operations.Add(-5, -3);
-            if (result == -8)
-                Console.WriteLine("Correct output: negative integers");
-            else
-                throw new Exception($"Test failed: expected -8, got {result}");
-        }
+            int[,] result = Matrix.Divide(null, 3);
 
-        public static void TestPositiveAndNegative()
-        {
-            int result = Operations.Add(-10, 15);
-            if (result == 5)
-                Console.WriteLine("Correct output: positive + negative");
-            else
-                throw new Exception($"Test failed: expected 5, got {result}");
-        }
-
-        public static void TestAddZero()
-        {
-            int result = Operations.Add(0, 42);
-            if (result == 42)
-                Console.WriteLine("Correct output: Add zero");
-            else
-                throw new Exception($"Test failed: expected 42, got {result}");
-        }
-
-        public static void TestZeroPlusZero()
-        {
-            int result = Operations.Add(0, 0);
-            if (result == 0)
-                Console.WriteLine("Correct output: 0 + 0");
-            else
-                throw new Exception($"Test failed: expected 0, got {result}");
-        }
-
-        public static void TestRegularAddition()
-        {
-            int result = Operations.Add(10, 20);
-            if (result == 30)
-                Console.WriteLine("Test present: regular addition");
-            else
-                throw new Exception($"Test failed: expected 30, got {result}");
+            Assert.Null(result);
         }
     }
 }

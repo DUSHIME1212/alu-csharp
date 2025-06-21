@@ -1,34 +1,73 @@
-using NUnit.Framework;
-using MyMath;
+﻿using System;
 
 namespace MyMath.Tests
 {
-    [TestFixture]
     public class OperationsTests
     {
-        [Test]
-        public void Add_TwoPositiveNumbers_ReturnsCorrectSum()
+        public static void Main(string[] args)
         {
-            Assert.AreEqual(5, Operations.Add(2, 3));
+            TestPositiveIntegers();
+            TestNegativeIntegers();
+            TestPositiveAndNegative();
+            TestAddZero();
+            TestZeroPlusZero();
+            TestRegularAddition();
+            
+            Console.WriteLine("All unit tests pass");
         }
 
-        [Test]
-        public void Add_PositiveAndNegativeNumbers_ReturnsCorrectSum()
+        public static void TestPositiveIntegers()
         {
-            Assert.AreEqual(1, Operations.Add(3, -2));
+            int result = Operations.Add(5, 3);
+            if (result == 8)
+                Console.WriteLine("Correct output: positive integers");
+            else
+                throw new Exception($"Test failed: expected 8, got {result}");
         }
 
-        [Test]
-        public void Add_TwoNegativeNumbers_ReturnsCorrectSum()
+        public static void TestNegativeIntegers()
         {
-            Assert.AreEqual(-5, Operations.Add(-2, -3));
+            int result = Operations.Add(-5, -3);
+            if (result == -8)
+                Console.WriteLine("Correct output: negative integers");
+            else
+                throw new Exception($"Test failed: expected -8, got {result}");
         }
 
-        [Test]
-        public void Add_ZeroAndNumber_ReturnsSameNumber()
+        public static void TestPositiveAndNegative()
         {
-            Assert.AreEqual(7, Operations.Add(0, 7));
-            Assert.AreEqual(-4, Operations.Add(-4, 0));
+            int result = Operations.Add(-10, 15);
+            if (result == 5)
+                Console.WriteLine("Correct output: positive + negative");
+            else
+                throw new Exception($"Test failed: expected 5, got {result}");
+        }
+
+        public static void TestAddZero()
+        {
+            int result = Operations.Add(0, 42);
+            if (result == 42)
+                Console.WriteLine("Correct output: Add zero");
+            else
+                throw new Exception($"Test failed: expected 42, got {result}");
+        }
+
+        public static void TestZeroPlusZero()
+        {
+            int result = Operations.Add(0, 0);
+            if (result == 0)
+                Console.WriteLine("Correct output: 0 + 0");
+            else
+                throw new Exception($"Test failed: expected 0, got {result}");
+        }
+
+        public static void TestRegularAddition()
+        {
+            int result = Operations.Add(10, 20);
+            if (result == 30)
+                Console.WriteLine("Test present: regular addition");
+            else
+                throw new Exception($"Test failed: expected 30, got {result}");
         }
     }
 }

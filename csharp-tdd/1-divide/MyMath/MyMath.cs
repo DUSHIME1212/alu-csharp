@@ -4,7 +4,7 @@ namespace MyMath
 {
     public class Matrix
     {
-        public static int[,]? Divide(int[,]? matrix, int num)
+        public static int[,] Divide(int[,] matrix, int num)
         {
             if (matrix == null)
                 return null;

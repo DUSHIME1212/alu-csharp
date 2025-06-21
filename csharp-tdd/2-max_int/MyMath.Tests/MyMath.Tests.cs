@@ -1,44 +1,40 @@
-﻿using NUnit.Framework;
-using System.Collections.Generic;
+﻿using Xunit;
 using MyMath;
+using System.Collections.Generic;
 
 namespace MyMath.Tests
 {
-    [TestFixture]
     public class OperationsTests
     {
-        [Test]
-        public void Max_WithPositiveNumbers_ReturnsMax()
+        [Fact]
+        public void Max_WithMultipleIntegers_ReturnsCorrectMax()
         {
-            List<int> numbers = new List<int> { 1, 3, 7, 2, 5 };
-            Assert.That(Operations.Max(numbers), Is.EqualTo(7));
+            List<int> nums = new List<int> { 1, 3, 7, 2, 5 };
+            int result = Operations.Max(nums);
+            Assert.Equal(7, result);
         }
 
-        [Test]
-        public void Max_WithNegativeNumbers_ReturnsMax()
+        [Fact]
+        public void Max_WithNegativeIntegers_ReturnsCorrectMax()
         {
-            List<int> numbers = new List<int> { -10, -3, -7, -2, -5 };
-            Assert.That(Operations.Max(numbers), Is.EqualTo(-2));
+            List<int> nums = new List<int> { -10, -20, -3 };
+            int result = Operations.Max(nums);
+            Assert.Equal(-3, result);
         }
 
-        [Test]
-        public void Max_WithMixedNumbers_ReturnsMax()
-        {
-            List<int> numbers = new List<int> { -10, 3, 7, -2, 5 };
-            Assert.That(Operations.Max(numbers), Is.EqualTo(7));
-        }
-
-        [Test]
+        [Fact]
         public void Max_WithEmptyList_ReturnsZero()
         {
-            List<int> numbers = new List<int>();
-            Assert.That(Operations.Max(numbers), Is.EqualTo(0));
+            List<int> nums = new List<int>();
+            int result = Operations.Max(nums);
+            Assert.Equal(0, result);
         }
 
-        [Test]
+        [Fact]
         public void Max_WithNullList_ReturnsZero()
         {
-            Assert.That(Operations.Max(null), Is.EqualTo(0));
+            int result = Operations.Max(null);
+            Assert.Equal(0, result);
         }
     }
 }

@@ -1,91 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/home/matt/Documents/learnc#/alu-csharp/csharp-tdd/0-add/MyMath.Tests/MyMath.Tests.csproj": {}
+    "C:\\Users\\LENOVO\\Documents\\alu-csharp\\csharp-tdd\\0-add\\MyMath.Tests\\MyMath.Tests.csproj": {}
   },
   "projects": {
-    "/home/matt/Documents/learnc#/alu-csharp/csharp-tdd/0-add/MyMath.Tests/MyMath.Tests.csproj": {
+    "C:\\Users\\LENOVO\\Documents\\alu-csharp\\csharp-tdd\\0-add\\MyMath.Tests\\MyMath.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/matt/Documents/learnc#/alu-csharp/csharp-tdd/0-add/MyMath.Tests/MyMath.Tests.csproj",
+        "projectUniqueName": "C:\\Users\\LENOVO\\Documents\\alu-csharp\\csharp-tdd\\0-add\\MyMath.Tests\\MyMath.Tests.csproj",
         "projectName": "MyMath.Tests",
-        "projectPath": "/home/matt/Documents/learnc#/alu-csharp/csharp-tdd/0-add/MyMath.Tests/MyMath.Tests.csproj",
-        "packagesPath": "/home/matt/.nuget/packages/",
-        "outputPath": "/home/matt/Documents/learnc#/alu-csharp/csharp-tdd/0-add/MyMath.Tests/obj/",
+        "projectPath": "C:\\Users\\LENOVO\\Documents\\alu-csharp\\csharp-tdd\\0-add\\MyMath.Tests\\MyMath.Tests.csproj",
+        "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\LENOVO\\Documents\\alu-csharp\\csharp-tdd\\0-add\\MyMath.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/matt/.nuget/NuGet/NuGet.Config"
-        ],
-        "originalTargetFrameworks": [
-          "net7.0"
-        ],
-        "sources": {
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "net7.0": {
-            "targetAlias": "net7.0",
-            "projectReferences": {
-              "/home/matt/Documents/learnc#/alu-csharp/csharp-tdd/0-add/MyMath/MyMath.csproj": {
-                "projectPath": "/home/matt/Documents/learnc#/alu-csharp/csharp-tdd/0-add/MyMath/MyMath.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "net7.0": {
-          "targetAlias": "net7.0",
-          "dependencies": {
-            "Microsoft.NET.Test.Sdk": {
-              "target": "Package",
-              "version": "[17.4.0, )"
-            },
-            "NUnit": {
-              "target": "Package",
-              "version": "[3.13.2, )"
-            },
-            "NUnit3TestAdapter": {
-              "target": "Package",
-              "version": "[4.0.0, )"
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.119/RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "/home/matt/Documents/learnc#/alu-csharp/csharp-tdd/0-add/MyMath/MyMath.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "/home/matt/Documents/learnc#/alu-csharp/csharp-tdd/0-add/MyMath/MyMath.csproj",
-        "projectName": "MyMath",
-        "projectPath": "/home/matt/Documents/learnc#/alu-csharp/csharp-tdd/0-add/MyMath/MyMath.csproj",
-        "packagesPath": "/home/matt/.nuget/packages/",
-        "outputPath": "/home/matt/Documents/learnc#/alu-csharp/csharp-tdd/0-add/MyMath/obj/",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "/home/matt/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\LENOVO\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -124,7 +53,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.119/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.410\\RuntimeIdentifierGraph.json"
         }
       }
     }

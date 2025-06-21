@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 
 namespace MyMath
 {
@@ -11,7 +10,15 @@ namespace MyMath
             if (nums == null || nums.Count == 0)
                 return 0;
 
-            return nums.Max();
+            int max = nums[0];
+
+            foreach (int num in nums)
+            {
+                if (num > max)
+                    max = num;
+            }
+
+            return max;
         }
     }
 }

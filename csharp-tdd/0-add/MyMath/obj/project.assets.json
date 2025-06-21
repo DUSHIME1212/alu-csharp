@@ -8,19 +8,19 @@
     "net7.0": []
   },
   "packageFolders": {
-    "/home/matt/.nuget/packages/": {}
+    "C:\\Users\\LENOVO\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/matt/Documents/learnc#/alu-csharp/csharp-tdd/0-add/MyMath/MyMath.csproj",
+      "projectUniqueName": "C:\\Users\\LENOVO\\Documents\\alu-csharp\\csharp-tdd\\0-add\\MyMath\\MyMath.csproj",
       "projectName": "MyMath",
-      "projectPath": "/home/matt/Documents/learnc#/alu-csharp/csharp-tdd/0-add/MyMath/MyMath.csproj",
-      "packagesPath": "/home/matt/.nuget/packages/",
-      "outputPath": "/home/matt/Documents/learnc#/alu-csharp/csharp-tdd/0-add/MyMath/obj/",
+      "projectPath": "C:\\Users\\LENOVO\\Documents\\alu-csharp\\csharp-tdd\\0-add\\MyMath\\MyMath.csproj",
+      "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\LENOVO\\Documents\\alu-csharp\\csharp-tdd\\0-add\\MyMath\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/matt/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\LENOVO\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
@@ -59,7 +59,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.119/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.410\\RuntimeIdentifierGraph.json"
       }
     }
   }

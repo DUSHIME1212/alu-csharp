@@ -1,27 +1,23 @@
-﻿namespace Text
+﻿using System;
+
+namespace Text
 {
     public class Str
     {
-        /// <summary>
-        /// Determines how many words are in a camelCase string.
-        /// </summary>
-        /// <param name="s">The camelCase string.</param>
-        /// <returns>The number of words in the string.</returns>
         public static int CamelCase(string s)
         {
-            if (string.IsNullOrEmpty(s)) return 0;
+            if (string.IsNullOrEmpty(s))
+                return 0;
 
-            s = s.Trim(); // Trim leading/trailing spaces
+            int wordCount = 1; // Start with 1 word (the first word)
 
-            int words = 1; // Start with 1 for the first word
-            foreach (var c in s)
+            foreach (char c in s)
             {
-                // Increment words if an uppercase letter is found
                 if (char.IsUpper(c))
-                    words++;
+                    wordCount++;
             }
 
-            return words;
+            return wordCount;
         }
     }
 }
