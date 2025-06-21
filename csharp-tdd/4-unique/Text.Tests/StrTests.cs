@@ -1,5 +1,5 @@
 ﻿using NUnit.Framework;
-using Text;  
+using Text;  // Make sure this references the Text project containing Str class
 
 namespace Text.Tests
 {
@@ -11,7 +11,7 @@ namespace Text.Tests
         {
             string input = "aabbc";
             int result = Str.UniqueChar(input);
-            Assert.AreEqual(4, result);  
+            Assert.AreEqual(4, result);  // 'c' is the first unique character at index 4
         }
 
         [Test]
@@ -19,7 +19,7 @@ namespace Text.Tests
         {
             string input = "aabbcc";
             int result = Str.UniqueChar(input);
-            Assert.AreEqual(-1, result);  
+            Assert.AreEqual(-1, result);  // No unique character, should return -1
         }
 
         [Test]
@@ -27,7 +27,7 @@ namespace Text.Tests
         {
             string input = "";
             int result = Str.UniqueChar(input);
-            Assert.AreEqual(-1, result);  
+            Assert.AreEqual(-1, result);  // No unique character in an empty string, should return -1
         }
 
         [Test]
@@ -35,16 +35,16 @@ namespace Text.Tests
         {
             string input = "a";
             int result = Str.UniqueChar(input);
-            Assert.AreEqual(0, result);  
+            Assert.AreEqual(0, result);  // 'a' is unique and at index 0
         }
 
         [Test]
 public void TestUniqueChar_MultipleUniqueCharacters_ReturnsFirstUniqueIndex()
 {
-    
-    string input = "abccba"; 
+    // Test when the string has multiple unique characters
+    string input = "abccba"; // 'a' is the first unique character at index 0
     int result = Str.UniqueChar(input);
-    Assert.AreEqual(-1, result);  
+    Assert.AreEqual(-1, result);  // 'a' is the first unique character at index 0
 }
 
     }

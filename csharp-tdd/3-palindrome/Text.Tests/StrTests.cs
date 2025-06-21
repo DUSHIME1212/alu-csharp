@@ -1,5 +1,5 @@
 ﻿using NUnit.Framework;
-using Text; 
+using Text; // Add this line to reference the Str class
 
 namespace Text.Tests
 {
@@ -11,7 +11,7 @@ namespace Text.Tests
         {
             string input = "Racecar";
             bool result = Str.IsPalindrome(input);
-            Assert.IsTrue(result);  
+            Assert.IsTrue(result);  // 'Racecar' is a palindrome
         }
 
         [Test]
@@ -19,7 +19,7 @@ namespace Text.Tests
         {
             string input = "Hello";
             bool result = Str.IsPalindrome(input);
-            Assert.IsFalse(result);  
+            Assert.IsFalse(result);  // 'Hello' is not a palindrome
         }
 
         [Test]
@@ -27,7 +27,7 @@ namespace Text.Tests
         {
             string input = "";
             bool result = Str.IsPalindrome(input);
-            Assert.IsTrue(result);  
+            Assert.IsTrue(result);  // Empty string is considered a palindrome
         }
 
         [Test]
@@ -35,7 +35,7 @@ namespace Text.Tests
         {
             string input = "A man, a plan, a canal: Panama.";
             bool result = Str.IsPalindrome(input);
-            Assert.IsTrue(result);  
+            Assert.IsTrue(result);  // The string is a palindrome ignoring spaces and punctuation
         }
 
         [Test]
@@ -43,7 +43,7 @@ namespace Text.Tests
         {
             string input = " level ";
             bool result = Str.IsPalindrome(input);
-            Assert.IsTrue(result);  
+            Assert.IsTrue(result);  // ' level ' is a palindrome ignoring spaces
         }
     }
 }

@@ -8,7 +8,7 @@ namespace Text
     {
         var charCount = new Dictionary<char, int>();
 
-        
+        // Count occurrences of each character
         foreach (var c in input)
         {
             if (charCount.ContainsKey(c))
@@ -21,16 +21,16 @@ namespace Text
             }
         }
 
-        
+        // Find the first unique character
         for (int i = 0; i < input.Length; i++)
         {
             if (charCount[input[i]] == 1)
             {
-                return i; 
+                return i; // Return the index of the first unique character
             }
         }
 
-        return -1; 
+        return -1; // No unique character found
     }
 }
 
