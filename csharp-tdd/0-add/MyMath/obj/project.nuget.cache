@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "U7XK8F0FyVM=",
+  "dgSpecHash": "G/SXHAYfgbEa/Np2Dp0KaNmzsnrAl05Ez7+I0H2G94wip0+QPekQM4vEt6fjMWg/yRPahrhWv6Wf+1guKOwoQA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\pc\\alu-csharp\\csharp-tdd\\0-add\\MyMath\\MyMath.csproj",
+  "projectFilePath": "/home/matt/Documents/learnc#/alu-csharp/csharp-tdd/0-add/MyMath/MyMath.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

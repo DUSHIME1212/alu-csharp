@@ -315,10 +315,7 @@
       "System.Reflection.Metadata/1.6.0": {},
       "MyMath/1.0.0": {
         "runtime": {
-          "MyMath.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "MyMath.dll": {}
         }
       }
     }

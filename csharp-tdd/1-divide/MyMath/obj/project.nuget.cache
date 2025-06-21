@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "OgQZMTCfrq0=",
+  "dgSpecHash": "J7qThw1MK1tRJrt+N5+3FnG3we2BP8JUuz7YYCqTFPaWVlKDFvaCyuRd2QIiv7RDhfjfoLhOvfhNZpcXOXzLdw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\pc\\alu-csharp\\csharp-tdd\\1-divide\\MyMath\\MyMath.csproj",
+  "projectFilePath": "/home/matt/Documents/learnc#/alu-csharp/csharp-tdd/1-divide/MyMath/MyMath.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
