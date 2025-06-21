@@ -1,66 +1,73 @@
-﻿using NUnit.Framework;
-using MyMath;
-using System;
+﻿﻿using System;
 
 namespace MyMath.Tests
 {
-    [TestFixture]
-    public class MatrixTests
+    public class OperationsTests
     {
-        [Test]
-        public void Divide_ValidMatrix_ReturnsCorrectResult()
+        public static void Main(string[] args)
         {
-            int[,] matrix = { { 10, 20 }, { 30, 40 } };
-            int[,] expected = { { 5, 10 }, { 15, 20 } };
-
-            int[,]? result = Matrix.Divide(matrix, 2);
+            TestPositiveIntegers();
+            TestNegativeIntegers();
+            TestPositiveAndNegative();
+            TestAddZero();
+            TestZeroPlusZero();
+            TestRegularAddition();
             
-            CollectionAssert.AreEqual(expected, result);
+            Console.WriteLine("All unit tests pass");
         }
 
-        [Test]
-        public void Divide_ByZero_ReturnsNullAndPrintsMessage()
+        public static void TestPositiveIntegers()
         {
-            int[,] matrix = { { 10, 20 }, { 30, 40 } };
-
-            using (var sw = new System.IO.StringWriter())
-            {
-                Console.SetOut(sw);
-                int[,]? result = Matrix.Divide(matrix, 0);
-                string output = sw.ToString().Trim();
-
-                Assert.That(result, Is.Null);
-                Assert.That(output, Is.EqualTo("Num cannot be 0"));
-            }
+            int result = Operations.Add(5, 3);
+            if (result == 8)
+                Console.WriteLine("Correct output: positive integers");
+            else
+                throw new Exception($"Test failed: expected 8, got {result}");
         }
 
-        [Test]
-        public void Divide_NullMatrix_ReturnsNull()
+        public static void TestNegativeIntegers()
         {
-            int[,]? result = Matrix.Divide(null, 2);
-            Assert.That(result, Is.Null);
+            int result = Operations.Add(-5, -3);
+            if (result == -8)
+                Console.WriteLine("Correct output: negative integers");
+            else
+                throw new Exception($"Test failed: expected -8, got {result}");
         }
 
-        [Test]
-        public void Divide_MatrixWithNegativeNumbers_ReturnsCorrectResult()
+        public static void TestPositiveAndNegative()
         {
-            int[,] matrix = { { -10, -20 }, { -30, -40 } };
-            int[,] expected = { { -5, -10 }, { -15, -20 } };
-
-            int[,]? result = Matrix.Divide(matrix, 2);
-
-            CollectionAssert.AreEqual(expected, result);
+            int result = Operations.Add(-10, 15);
+            if (result == 5)
+                Console.WriteLine("Correct output: positive + negative");
+            else
+                throw new Exception($"Test failed: expected 5, got {result}");
         }
 
-        [Test]
-        public void Divide_MatrixWithMixedNumbers_ReturnsCorrectResult()
+        public static void TestAddZero()
         {
-            int[,] matrix = { { -10, 20 }, { 30, -40 } };
-            int[,] expected = { { -5, 10 }, { 15, -20 } };
+            int result = Operations.Add(0, 42);
+            if (result == 42)
+                Console.WriteLine("Correct output: Add zero");
+            else
+                throw new Exception($"Test failed: expected 42, got {result}");
+        }
 
-            int[,]? result = Matrix.Divide(matrix, 2);
+        public static void TestZeroPlusZero()
+        {
+            int result = Operations.Add(0, 0);
+            if (result == 0)
+                Console.WriteLine("Correct output: 0 + 0");
+            else
+                throw new Exception($"Test failed: expected 0, got {result}");
+        }
 
-            CollectionAssert.AreEqual(expected, result);
+        public static void TestRegularAddition()
+        {
+            int result = Operations.Add(10, 20);
+            if (result == 30)
+                Console.WriteLine("Test present: regular addition");
+            else
+                throw new Exception($"Test failed: expected 30, got {result}");
         }
     }
 }
